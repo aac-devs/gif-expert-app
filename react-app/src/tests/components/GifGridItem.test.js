@@ -9,10 +9,6 @@ describe("Pruebas en GifGridItem", () => {
   const url = "https://localhost/algo.jpg";
   const wrapper = shallow(<GifGridItem title={title} url={url} />);
 
-  // beforeEach(() => {
-  //   wrapper = shallow(<GifGridItem />);
-  // });
-
   test("debe mostrar el componente correctamente", () => {
     expect(wrapper).toMatchSnapshot();
   });
